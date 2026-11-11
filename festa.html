@@ -20,12 +20,38 @@
 </div>
 </header>
 <main>
-<div class="wrap">
-<div class="page-title"><h1>Festa e Família</h1><p>Regras simples, partidas rápidas e muita conversa. Bons para reunir amigos e parentes de idades diferentes.</p></div>
-<div class="cover"><img src="images/festa.svg" alt="Três dados coloridos" width="600" height="400"></div>
-<div class="jogos"><article class="jogo"><h3>Dixit</h3><p class="meta">3 a 6 jogadores &middot; cerca de 30 minutos</p><p>Cartas com ilustrações abstratas e uma dica dada por quem conta a história. O desafio é ser entendido, mas não óbvio demais.</p></article><article class="jogo"><h3>Codenames</h3><p class="meta">4 ou mais jogadores &middot; cerca de 15 minutos</p><p>Dois times tentam descobrir suas palavras a partir de dicas de uma só palavra dadas pelos espiões-mestres.</p></article><article class="jogo"><h3>Just One</h3><p class="meta">3 a 7 jogadores &middot; cerca de 20 minutos</p><p>Um jogador tenta adivinhar uma palavra com a ajuda de dicas escritas pelo grupo. Dicas repetidas são eliminadas.</p></article><article class="jogo"><h3>Uno</h3><p class="meta">2 a 10 jogadores &middot; cerca de 20 minutos</p><p>Jogo de cartas para ficar sem cartas na mão primeiro. Fácil de ensinar e adequado para qualquer idade.</p></article></div>
-<aside class="dica"><p><strong>Dica para anfitriões:</strong> tenha sempre um jogo cooperativo ou de adivinhação à mão. Eles funcionam bem quando o grupo ainda está se conhecendo.</p></aside>
-</div>
+    <div class="wrap">
+        <div class="page-title"><h1>Festa e Família</h1><p>Regras simples, partidas rápidas e muita conversa. Bons para reunir amigos e parentes de idades diferentes.</p></div>
+        <div class="cover"><img src="images/festa.svg" alt="Três dados coloridos" width="600" height="400"></div>
+        <div class="jogos"><article class="jogo"><h3>Dixit</h3><p class="meta">3 a 6 jogadores &middot; cerca de 30 minutos</p><p>Cartas com ilustrações abstratas e uma dica dada por quem conta a história. O desafio é ser entendido, mas não óbvio demais.</p></article><article class="jogo"><h3>Codenames</h3><p class="meta">4 ou mais jogadores &middot; cerca de 15 minutos</p><p>Dois times tentam descobrir suas palavras a partir de dicas de uma só palavra dadas pelos espiões-mestres.</p></article><article class="jogo"><h3>Just One</h3><p class="meta">3 a 7 jogadores &middot; cerca de 20 minutos</p><p>Um jogador tenta adivinhar uma palavra com a ajuda de dicas escritas pelo grupo. Dicas repetidas são eliminadas.</p></article><article class="jogo"><h3>Uno</h3><p class="meta">2 a 10 jogadores &middot; cerca de 20 minutos</p><p>Jogo de cartas para ficar sem cartas na mão primeiro. Fácil de ensinar e adequado para qualquer idade.</p></article></div>
+        <section class="duelo" aria-labelledby="duelo-titulo">
+            <h2 id="duelo-titulo">Duelo na mesa: Chororozinho vs. Chororo</h2>
+            <p>Toda mesa de jogo tem aquele jogador que não leva a derrota na esportiva. Conheça os dois rivais do blog.</p>
+            <div class="duelo-grid">
+                <figure><svg viewBox="0 0 120 170" width="130" role="img" aria-label="Peão pequeno amarelo chorando"><ellipse cx="60" cy="158" rx="42" ry="9" fill="#14213d" opacity=".25"/><path d="M30 150h60l-8-14c-6-6-9-14-9-26h-26c0 12-3 20-9 26z" fill="#fcbf49" stroke="#14213d" stroke-width="4" stroke-linejoin="round"/><circle cx="60" cy="68" r="34" fill="#fcbf49" stroke="#14213d" stroke-width="4"/><circle cx="48" cy="64" r="5" fill="#14213d"/><circle cx="72" cy="64" r="5" fill="#14213d"/><path d="M46 90q14-12 28 0" fill="none" stroke="#14213d" stroke-width="4" stroke-linecap="round"/><path d="M44 72q-4 14-1 22q6-6 4-22z" fill="#8fd3c8" stroke="#14213d" stroke-width="2"/><path d="M76 72q4 14 1 22q-6-6-4-22z" fill="#8fd3c8" stroke="#14213d" stroke-width="2"/></svg><figcaption><strong>Chororozinho</strong><br>Chora quando perde por um ponto e pede revanche na hora.</figcaption></figure>
+                <figure><svg viewBox="0 0 120 170" width="170" role="img" aria-label="Peão grande vermelho chorando"><ellipse cx="60" cy="158" rx="42" ry="9" fill="#14213d" opacity=".25"/><path d="M30 150h60l-8-14c-6-6-9-14-9-26h-26c0 12-3 20-9 26z" fill="#d62839" stroke="#14213d" stroke-width="4" stroke-linejoin="round"/><circle cx="60" cy="68" r="34" fill="#d62839" stroke="#14213d" stroke-width="4"/><circle cx="48" cy="64" r="5" fill="#14213d"/><circle cx="72" cy="64" r="5" fill="#14213d"/><path d="M46 90q14-12 28 0" fill="none" stroke="#14213d" stroke-width="4" stroke-linecap="round"/><path d="M44 72q-4 14-1 22q6-6 4-22z" fill="#8fd3c8" stroke="#14213d" stroke-width="2"/><path d="M76 72q4 14 1 22q-6-6-4-22z" fill="#8fd3c8" stroke="#14213d" stroke-width="2"/></svg><figcaption><strong>Chororo</strong><br>Chora quando o dado não ajuda e jura que o jogo está viciado.</figcaption></figure>
+            </div>
+            <div class="sorteio"><button type="button" id="btn-chora">Quem chora hoje?</button><p id="resultado" aria-live="polite">Clique para sortear.</p></div>
+        </section>
+        <style>
+            .duelo{margin-top:3rem;background:var(--white);border:2px solid var(--ink);border-radius:18px;padding:2rem;box-shadow:6px 6px 0 var(--ink)}
+            .duelo-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;align-items:end;margin:1.5rem 0}
+            .duelo figure{margin:0;text-align:center}
+            .duelo figcaption{margin-top:.8rem}
+            .sorteio{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem}
+            .sorteio p{margin:0;font-weight:700}
+            @media(max-width:600px){.duelo-grid{grid-template-columns:1fr}}
+        </style>
+        <script>
+            (function(){
+            var frases=["Hoje quem chora é o Chororozinho: perdeu por um ponto.","Hoje quem chora é o Chororo: o dado traiu de novo.","Hoje choram os dois: a partida terminou empatada.","Hoje ninguém chora: milagre na mesa!"];
+            document.getElementById("btn-chora").addEventListener("click",function(){
+            document.getElementById("resultado").textContent=frases[Math.floor(Math.random()*frases.length)];
+            });
+            })();
+        </script>
+        <aside class="dica"><p><strong>Dica para anfitriões:</strong> tenha sempre um jogo cooperativo ou de adivinhação à mão. Eles funcionam bem quando o grupo ainda está se conhecendo.</p></aside>
+    </div>
 </main>
 <footer class="site">
 <div class="wrap">
